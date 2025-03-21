@@ -2,72 +2,73 @@ import java.util.Scanner;
 
 public class EjercicioTerrible {
     public static void main(String[] args) {
-        Scanner x = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese el nombre del primer estudiante:");
-        String a = x.nextLine();
-        System.out.println("Ingrese la edad:");
-        int b = x.nextInt();
-        x.nextLine();
+        System.out.println("Ingrese el nombre del primer estudiante: ");
+        String nombre1 = scanner.nextLine();
+        System.out.println("Ingrese la edad: ");
+        int edad1 = scanner.nextInt();
+        scanner.nextLine();
 
-        System.out.println("Ingrese el nombre del segundo estudiante:");
-        String c = x.nextLine();
-        System.out.println("Ingrese la edad:");
-        float d = x.nextFloat();
-        x.nextLine();
+        System.out.println("Ingrese el nombre del segundo estudiante: ");
+        String nombre2= scanner.nextLine();
+        System.out.println("Ingrese la edad: ");
+        int edad2 = scanner.nextInt();
+        scanner.nextLine();
 
-        System.out.println("Ingrese el nombre del tercer estudiante:");
-        String e = x.nextLine();
-        System.out.println("Ingrese la edad:");
-        double f = x.nextDouble();
-        x.nextLine();
+        System.out.println("Ingrese el nombre del tercer estudiante: ");
+        String nombre3 = scanner.nextLine();
+        System.out.println("Ingrese la edad: ");
+        int edad3 = scanner.nextInt();
+        scanner.nextLine();
 
-        System.out.println("Ingrese el nombre del cuarto estudiante:");
-        String g = x.nextLine();
-        System.out.println("Ingrese la edad:");
-        short h = x.nextShort();
-        x.nextLine();
+        System.out.println("Ingrese el nombre del cuarto estudiante: ");
+        String nombre4 = scanner.nextLine();
+        System.out.println("Ingrese la edad: ");
+        int edad4 = scanner.nextInt();
+        scanner.nextLine();
 
-        System.out.println("Ingrese el nombre del quinto estudiante:");
-        String i = x.nextLine();
-        System.out.println("Ingrese la edad:");
-        byte j = x.nextByte();
-        x.nextLine();
+        System.out.println("Ingrese el nombre del quinto estudiante: ");
+        String nombre5 = scanner.nextLine();
+        System.out.println("Ingrese la edad: ");
+        int edad5 = scanner.nextInt();
+        scanner.nextLine();
 
-        double y = (b + d + f + h + j) / 5;
+        double promedio = (double)(edad1 + edad2 + edad3 + edad4+ edad5) / 5;
 
-        System.out.println("Edad promedio de los estudiantes: " + y);
+        System.out.println("Edad promedio de los estudiantes: " + promedio);
 
-        if (b > 17) {
-            System.out.println(a + " es mayor de edad");
+        if (edad1 > 17) {
+            System.out.println(nombre1 + " es mayor de edad. ");
         } else {
-            System.out.println(a + " es menor de edad");
+            System.out.println(nombre1 + " es menor de edad. ");
         }
 
-        if (d > 17) {
-            System.out.println(c + " es mayor de edad");
+        if (edad2 > 17) {
+            System.out.println(nombre2 + " es mayor de edad. ");
         } else {
-            System.out.println(c + " es menor de edad");
+            System.out.println(nombre2 + " es menor de edad. ");
         }
 
-        if (f > 17) {
-            System.out.println(e + " es mayor de edad");
+        if (edad3 > 17) {
+            System.out.println(nombre3 + " es mayor de edad. ");
         } else {
-            System.out.println(e + " es menor de edad");
+            System.out.println(nombre3 + " es menor de edad. ");
         }
 
-        if (h > 17) {
-            System.out.println(g + " es mayor de edad");
+        if (edad4 > 17) {
+            System.out.println(nombre4 + " es mayor de edad. ");
         } else {
-            System.out.println(g + " es menor de edad");
+            System.out.println(nombre4 + " es menor de edad. ");
         }
 
-        if (j > 17) {
-            System.out.println(i + " es mayor de edad");
+        if (edad5 > 17) {
+            System.out.println(nombre5 + " es mayor de edad. ");
         } else {
-            System.out.println(i + " es menor de edad");
+            System.out.println(nombre5 + " es menor de edad. ");
         }
 
         System.out.println("Programa finalizado.");
+        scanner.close();
     }
 }
